@@ -1,0 +1,14 @@
+{
+  "apps" : [
+    {
+      "name": "dnc",
+      "script": "./index.js",
+      "watch": true,
+      "env": {
+        "NODE_ENV": "local",
+        "NODE_PATH": "/Users/idev/WebDevelopment/www/dnc/backend/",
+        "TZ": "UTC",
+        "PORT": 3015
+      }
+    }]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "dnc-test-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node ./node_modules/eslint/bin/eslint.js ./",
+    "lint-fix": "node ./node_modules/eslint/bin/eslint.js ./ --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "eslint": "^7.8.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5"
+  }
+}
